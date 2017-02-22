@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="OnLoad">
+  <ribbon>
+    <tabs>
+      <tab id="MyFirstExcelRibbonTab" label="My Custom Tab">
+        <group id="HelpGroup" label="My Group">
+          <button id="PressMeButton" label="Press Me!" imageMso="FastForwardShort" size="large" onAction="OnPressMe" />
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
