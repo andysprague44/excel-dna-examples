@@ -76,11 +76,16 @@ namespace MessageBoxAddin
             }
         }
 
-        private static int _delaySeconds;
+        private static int _delaySeconds = 5;
 
         public void OnDelayEditBoxChanged(IRibbonControl control, string text)
         {
-            _delaySeconds = int.Parse(text);
+            int delay;
+            var success = int.TryParse(text, out delay);
+            if (success)
+                _delaySeconds = delay;
+            else
+                _delaySeconds = 5;
         }
 
         public void OnPressMeBackgroundThread(IRibbonControl control)
@@ -90,7 +95,5 @@ namespace MessageBoxAddin
                 controller.OnPressMeBackgroundThread(_delaySeconds);
             }
         }
-
-
     }
 }

@@ -6,7 +6,6 @@ using ExcelDna.Integration;
 using Application = NetOffice.ExcelApi.Application;
 using ExcelDna.Integration.CustomUI;
 using MessageBoxAddin.Forms;
-using NetOffice.ExcelApi;
 
 namespace MessageBoxAddin
 {
