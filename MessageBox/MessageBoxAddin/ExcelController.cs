@@ -6,6 +6,7 @@ using ExcelDna.Integration;
 using Application = NetOffice.ExcelApi.Application;
 using ExcelDna.Integration.CustomUI;
 using MessageBoxAddin.Forms;
+using static MessageBoxAddin.Extensions.ExcelDnaExtensions;
 
 namespace MessageBoxAddin
 {
@@ -53,17 +54,26 @@ namespace MessageBoxAddin
                 TaskScheduler.Current
             );
         }
-
-        public void RunBackgroundThread(int delay)
+        public async Task RunBackgroundThread(int delay)
         {
             Thread.Sleep(delay*1000);
-            ExcelAsyncUtil.QueueAsMacro(() =>
+            
+            //get user input as part of a background thread
+            var dialogResult = await _excel.QueueAsMacroAsync(xl =>
                 _excelWinFormsUtil.MessageBox(
                     "Message box called from background thread",
                     "Long Running Thread",
-                    MessageBoxButtons.OK,
+                    MessageBoxButtons.OKCancel,
                     MessageBoxIcon.Information)
             );
+
+            //do stuff depending on dialog result in the background
+
+            //finally, call back to excel to write some result
+            ExcelAsyncUtil.QueueAsMacro(() =>
+            {
+                _excel.Range("A1").Value = dialogResult.ToString();
+            });
         }
 
         public void Dispose()

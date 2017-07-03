@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="CustomRibbon.cs" />
     <Compile Include="ExcelController.cs" />
+    <Compile Include="Extensions\ExcelWinFormsUtilExtensions.cs" />
     <Compile Include="Forms\ExcelWinFormsUtil.cs" />
     <Compile Include="Forms\IExcelWinFormsUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
