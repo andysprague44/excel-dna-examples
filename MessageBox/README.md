@@ -1,6 +1,6 @@
 # README #
 
-Examples of Excel-DNA, a library to write excel add-ins using .NET.
+Examples of Excel-DNA, this project is to show displaying MessageBoxes and how to call from asychronous code
 
 ### How do I get set up? ###
 
