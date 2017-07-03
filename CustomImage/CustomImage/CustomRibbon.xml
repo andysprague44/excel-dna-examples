@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="OnLoad">
+  <ribbon>
+    <tabs>
+      <tab id="CustomRibbonTab" label="My Custom Tab">
+        <group id="CustomIconGroup" label="Custom Icon Group">
+          <button id="RugbyImageButton"    label="Rugby"    getImage="GetImage" size="large" onAction="OnPressMe" />
+          <button id="FootballImageButton" label="Football" getImage="GetImage" size="large" onAction="OnPressMe" />
+          <button id="GolfImageButton"     label="Golf"     getImage="GetImage" size="large" onAction="OnPressMe" />
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>

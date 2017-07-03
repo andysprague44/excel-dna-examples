@@ -1,0 +1,7 @@
+C:\Dev\Excel-DNA\excel-dna-examples\CustomIconAddIn\CustomIconAddIn\bin\Debug\CustomIconAddIn.pdb
+C:\Dev\Excel-DNA\excel-dna-examples\CustomIconAddIn\CustomIconAddIn\obj\Debug\CustomIconAddIn.csprojResolveAssemblyReference.cache
+C:\Dev\Excel-DNA\excel-dna-examples\CustomIconAddIn\CustomIconAddIn\obj\Debug\CustomIconAddIn.Properties.Resources.resources
+C:\Dev\Excel-DNA\excel-dna-examples\CustomIconAddIn\CustomIconAddIn\obj\Debug\CustomIconAddIn.csproj.GenerateResource.Cache
+C:\Dev\Excel-DNA\excel-dna-examples\CustomIconAddIn\CustomIconAddIn\obj\Debug\CustomIconAddIn.pdb
+C:\Dev\Excel-DNA\excel-dna-examples\CustomIconAddIn\CustomIconAddIn\bin\Debug\CustomIconAddIn.exe
+C:\Dev\Excel-DNA\excel-dna-examples\CustomIconAddIn\CustomIconAddIn\obj\Debug\CustomIconAddIn.exe
