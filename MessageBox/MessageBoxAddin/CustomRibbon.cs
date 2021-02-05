@@ -95,5 +95,13 @@ namespace MessageBoxAddin
                 controller.OnPressMeBackgroundThread(_delaySeconds);
             }
         }
+
+        public void OnPressMeCustomForm(IRibbonControl control)
+        {
+            using (var controller = new ExcelController(_excel, _thisRibbon, _excelWinFormsUtil))
+            {
+                controller.OnPressMeCustomForm();
+            }
+        }
     }
 }

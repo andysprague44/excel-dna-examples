@@ -79,5 +79,21 @@ namespace MessageBoxAddin
         public void Dispose()
         {
         }
+
+        public void OnPressMeCustomForm()
+        {
+            var form = new MyCustomForm();
+
+            var dialogResult = _excelWinFormsUtil.ShowForm(form);
+
+            if (dialogResult == DialogResult.OK)
+            {
+                _excel.Range("A1").Value = form.TextBoxContents ?? "No text added!";
+            }
+            else 
+            {
+                _excel.Range("A1").Value = null;
+            }
+        }
     }
 }

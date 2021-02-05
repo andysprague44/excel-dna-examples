@@ -2,13 +2,16 @@
 <customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="OnLoad">
   <ribbon>
     <tabs>
-      <tab id="MessageBoxTab" label="Message Box Tab">
+      <tab id="MessageBoxTab" label="Message Box">
         <group id="MessageBoxGroup" label="Message Box Group">
           <button id="PressMeButton" label="Show" imageMso="FastForwardShort" size="normal" onAction="OnPressMe" />
         </group>
         <group id="MessageBoxBackgroundGroup" label="Message Box Background">
           <button id="PressMeButtonBackground" label="Show From Background Thread" imageMso="FastForwardShort" size="normal" onAction="OnPressMeBackgroundThread" />
           <editBox id="DelayEditBox" label ="Enter delay in seconds" onChange="OnDelayEditBoxChanged" />
+        </group>
+        <group id="MessageBoxCustomFormGroup" label="Windows Form">
+          <button id="PressMeButtonCustomForm" label="Open" imageMso="FastForwardShort" size="normal" onAction="OnPressMeCustomForm" />
         </group>
       </tab>
     </tabs>

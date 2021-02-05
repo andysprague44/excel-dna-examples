@@ -6,6 +6,11 @@ namespace MessageBoxAddin.Forms
 {
     public class ExcelWinFormsUtil : IExcelWinFormsUtil
     {
+        public DialogResult ShowForm(Form form)
+        {
+            return ShowModal(form.ShowDialog);
+        }
+
         public DialogResult MessageBox(string text, string caption, MessageBoxButtons buttons, MessageBoxIcon icon)
         {
             return ShowModal(parentWindow => MsgBox.Show(parentWindow, text, caption, buttons, icon));
